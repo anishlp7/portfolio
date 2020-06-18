@@ -3,11 +3,10 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 25px;
     text-transform: uppercase;
     z-index: 12;
-
-
   
     .left {
       position: relative;
@@ -30,6 +29,14 @@
         padding: 10px 15px;
         cursor: pointer;
       }
+    }
+
+    .navIcon{
+      z-index: 20;
+      margin: 0 10px 0 0;
+      padding: 8px 30px;
+      border: 3px solid white;
+      border-radius: 10px;
     }
   }
   

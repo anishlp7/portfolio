@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import resume from '../../assets/resume.pdf';
 import './header.scss';
 
 class Header extends React.Component {
@@ -19,7 +20,7 @@ class Header extends React.Component {
                 <Link to="/contact" className="option">Contact Me</Link>
             </div>
             <div className="navIcon">
-                    <h5>Font Awesoem</h5>
+                    <a className="resume" href={resume} target="_blank" rel="noopener noreferrer">Resume</a>
             </div>
 
         </div>
