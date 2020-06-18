@@ -1,0 +1,35 @@
+.Header {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    z-index: 12;
+
+
+  
+    .left {
+      position: relative;
+      height: 100%;
+      width: 150px;
+      padding: 25px;
+      letter-spacing: 3px;
+      z-index: 12;
+    }
+
+    .mainNav {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 12;
+  
+      .option {
+        padding: 10px 15px;
+        cursor: pointer;
+      }
+    }
+  }
+  

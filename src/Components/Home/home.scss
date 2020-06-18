@@ -1,0 +1,45 @@
+.home {
+    display: grid;
+    grid-template-rows: 100vh;
+    grid-template-columns: 50% 50%;
+    color: white;
+    position: absolute;
+    z-index: 12;
+
+    .abt-me{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 0 0 100px;
+        z-index: 12;
+    }
+
+
+
+    .textAlign{
+       
+        font-size: 30px;
+    }
+
+    .headAlign{
+        font-size: 100px;
+    }
+
+
+    .img-me{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        z-index: 12;
+        
+    }
+
+    .img1{
+        background-size: cover;
+        height: 1000px;
+    }
+
+
+
+
+}

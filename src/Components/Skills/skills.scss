@@ -1,0 +1,13 @@
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+
+    .imgAlign{
+        opacity: 0;
+	    visibility: hidden;
+        height: 150px;
+        width: 150px;
+        margin: 66px 30px;
+        z-index: 15;
+    }
+}
