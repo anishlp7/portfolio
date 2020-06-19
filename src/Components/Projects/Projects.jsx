@@ -1,6 +1,6 @@
 import React from 'react';
-import { projects } from './projects'
-import { TimelineLite } from 'gsap'
+import { projects } from './data';
+import { TimelineLite } from 'gsap';
 
 import './Projects.scss';
 
@@ -15,7 +15,7 @@ class Projects extends React.Component {
     }
 
     componentDidMount(){
-        this.tl.staggerTo(this.projects, 1,{ autoAlpha: 1, y: -20 }, 0.3);
+        this.tl.staggerFrom(this.projects, 0.5,{ scale:2, autoAlpha:0 }, 0.3);
     }
 
     render() {

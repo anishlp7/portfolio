@@ -1,0 +1,119 @@
+.contact{
+    z-index: 666;
+   .col-6{
+    display: grid;
+    grid-template-rows: 66vh;
+    grid-template-columns: 50% 50%;
+    color: white;
+    z-index: 12;
+
+    .left{
+        z-index: 50;
+    }
+    
+
+    .letsTalk{
+        display: flex;
+        justify-content: center;
+        margin: 0 0 30px 0;
+        
+    }
+
+    h1{
+        padding: 0 0 10px 0;
+        border-bottom: 5px dotted white;
+    }
+
+    .contct-ip {
+        display: flex;
+        justify-content: center;
+    }
+
+    .formInput, .formTextarea {
+        height: 50px;
+        padding: 20px;
+        width: 380px;
+        margin: 0 0 24px 0;
+        border-radius: 10px;
+        font-family: cursive;
+        background-color: transparent;
+        border: 2px solid white;
+        color: white;
+    }
+
+    ::placeholder{
+        font-family: cursive;
+        color: white;
+        opacity: 1;
+    }
+
+    .formTextarea {
+        height: 110px;
+    }
+    button {
+        display: flex;
+        margin: auto;
+        background-color: transparent;
+        padding:  10px 40px;
+        border-radius: 10px;
+        font-size: 15px;
+        border: 2px solid white;
+        color: white;
+        cursor: pointer;
+    }
+    .right{
+        display: flex;
+        justify-content: center;
+    }
+
+    .imgAlign {
+        width: 34px;
+    }
+    .contct-me{
+        z-index: 20;
+    }
+    .cntct-details{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    td > p{
+        font-size: 25px;
+        margin-left: 30px;
+        
+    }
+   }
+
+
+
+   .col-12{
+       width: 100%;
+   
+
+   .cnctme{
+       display: flex;
+       justify-content: center;;
+       color: white;
+   } 
+   .sc-icn{
+       display: flex;
+       justify-content: center;
+   }
+
+   .sc-icn > a {
+       z-index: 9999;
+       margin: 0 25px 0 25px;
+   }
+   .imgAlign1{
+       width: 40px;
+   }
+
+   .img-clr{
+       background-color: white;
+       border-radius: 8px;
+   }
+
+}
+}

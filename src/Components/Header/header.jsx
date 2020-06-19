@@ -19,10 +19,7 @@ class Header extends React.Component {
                 <Link to="/projects" className="option">Projects</Link>
                 <Link to="/contact" className="option">Contact Me</Link>
             </div>
-            <div className="navIcon">
-                    <a className="resume" href={resume} target="_blank" rel="noopener noreferrer">Resume</a>
-            </div>
-
+           <a className="resume" href={resume} target="_blank" rel="noopener noreferrer">Resume</a>
         </div>
 )
 }

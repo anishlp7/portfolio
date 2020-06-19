@@ -16,7 +16,7 @@ class Skills extends React.Component {
     }
 
     componentDidMount(){
-        this.tl.staggerTo(this.cards, 1,{ autoAlpha: 1, y: -20 }, 0.3);
+        this.tl.staggerFrom(this.cards, 0.5,{autoAlpha: 0, scale:-2 }, 0.3);
     }
 render(){
         return(

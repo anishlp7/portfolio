@@ -5,7 +5,7 @@ import { Switch, Route } from 'react-router-dom';
 import Home from './Components/Home/home';
 import Skills from './Components/Skills/skills';
 import Contact from './Components/Contactus/contact';
-import Projects from './Components/Projects/Projects';
+import Projects from './Components/Projects/Projects.jsx';
 
 class App extends React.Component{
 
