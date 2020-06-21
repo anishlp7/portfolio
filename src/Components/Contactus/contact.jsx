@@ -32,13 +32,13 @@ class Contact extends React.Component{
             this.t1
             .from(this.leftHead,  0.5, { scale:-15, autoAlpha:0 })
             .from(this.ip1, 0.5,{ x: -500, autoAlpha: 0 })
-            .from(this.ip2, 0.5,{ x: 500, autoAlpha: 0 }, "-=0.25")
+            .from(this.ip2, 0.5,{ x: 500, autoAlpha: 0 }, "-=0.02")
             .from(this.ip3, 0.5, { x: -500, autoAlpha: 0 }, "ip3")
-            .from(this.isb, 0.5, { x: 500, autoAlpha: 0 }, "ip3+=0.25")
-            .from(this.rightHead, 0.5, { scale:-15, autoAlpha:0 }, "isb+=0.25")
-            .staggerFrom(this.contactme, 0.5, { scale:-15, autoAlpha:0 }, 0.3)
-            .from(this.cnctme,0.5, { scale: 50, autoAlpha:0},"contactme+=0.25")
-            .staggerFrom(this.socialIcons, 0.5, { scale:15, autoAlpha:0 }, 0.2)
+            .from(this.isb, 0.5, { x: 500, autoAlpha: 0 }, "ip3+=0.4")
+            .from(this.rightHead, 0.5, { scale:-15, autoAlpha:0 }, "isb+=0.2")
+            .staggerFrom(this.contactme, 0.5, { scale:-15, autoAlpha:0 }, 0.2)
+            .from(this.cnctme,0.5, { scale: 50, autoAlpha:0},"contactme+=0.2")
+            .staggerFrom(this.socialIcons, 0.5, { scale:15, autoAlpha:0 }, 0.1)
         }
 
         
