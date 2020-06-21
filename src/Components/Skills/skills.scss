@@ -7,6 +7,60 @@
         height: 150px;
         width: 150px;
         margin: 66px 30px;
+        background-size: cover;
         z-index: 15;
     }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 768px)  {
+    .skills {
+        overflow: scroll;
+        display: flex;
+        justify-content: center;
+        height: 80vh;
+    
+
+    .imgAlign{
+        margin: 25px 20px;
+        height: 277px;
+        width: 350px;
+    }
+}
+
+}
+
+@media only screen and (max-width: 768px) and (min-width: 320px)  {
+    .skills {
+        display: flex;
+        justify-content: center;
+        height: 80vh;
+        margin: 20px 20px;
+        overflow: scroll;
+    
+
+    .imgAlign{
+        height: 100px;
+        width: 100px;
+        margin: 20px 20px;
+        background-size: cover;;
+    }
+}
+
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1024px)  {
+    .skills {
+        height: 80vh;
+        display: flex;
+
+        justify-content: center;
+    
+
+    .imgAlign{
+        height: 300px;
+        width: 350px;
+        margin: 20px 20px;
+    }
+}
+
 }

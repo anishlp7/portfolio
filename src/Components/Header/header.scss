@@ -28,6 +28,14 @@
       .option {
         padding: 10px 15px;
         cursor: pointer;
+        color: white;
+        transition: color 2s;
+        transition-duration: 1s;
+
+        &:hover{
+          transform: rotate(10deg) scale(1) skew(15deg);
+          color:yellow;
+        }
       }
     }
     .resume{
@@ -36,6 +44,13 @@
       border: 3px solid white;
       border-radius: 10px;
       z-index: 20;
+      transition: color 2s;
+        transition-duration: 1s;
+
+        &:hover{
+          transform: rotate(10deg) scale(1) skew(15deg);
+          color:yellow;
+        }
     }
 
   }

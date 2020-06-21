@@ -1,6 +1,7 @@
 import React from 'react';
 import {contactme, socialIcons } from './data';
 import { TimelineLite } from 'gsap';
+import axios from 'axios';
 
 import './contact.scss';
 
@@ -8,7 +9,11 @@ import './contact.scss';
 class Contact extends React.Component{
 
     constructor(props){
-        super(props)
+        super(props);
+
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.resetForm = this.resetForm.bind(this);
+
 
         this.t1 = new TimelineLite();
 
@@ -36,6 +41,41 @@ class Contact extends React.Component{
             .staggerFrom(this.socialIcons, 0.5, { scale:15, autoAlpha:0 }, 0.2)
         }
 
+        
+
+        handleSubmit(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            axios({
+                method:"POST",
+                url:"http://localhost:3001/api/form",
+                data: {
+                    name,
+                    email,
+                    message
+                }
+            }).then((response) => {
+                if(response.data.msg === 'success'){
+                    console.log("Message is sendt")
+                    this.resetForm()
+                }else if(response.data.msg === 'fail'){
+                    alert("Message faled to sent.")
+                }
+            })
+
+        }
+
+    
+
+        resetForm(){
+            document.getElementById('contact-form').reset();
+            alert("Message Was Sent SuccessFully")
+            
+        }
 
     render(){
             return (
@@ -46,12 +86,12 @@ class Contact extends React.Component{
                             <h1 ref={h1 => this.leftHead = h1}>Let's Talk</h1>
                         </div>
                         <div className="contct-ip">
-                            <form className="formAlign">
-                                    <input ref={ip1 => this.ip1 = ip1 } className="formInput" type="text"  name="Name" placeholder="Enter Your Name"/><br />
-                                    <input ref={ip2 => this.ip2 = ip2 } className="formInput"  type="text" name="email" placeholder="Enter Your Email" /><br />
-                                    <textarea ref={ip3 => this.ip3 = ip3 }  className="formTextarea" name="message" rows="5" cols="50" placeholder="Enter Your Message">
+                            <form className="formAlign" onSubmit={this.handleSubmit} method="POST" id="contact-form">
+                                    <input ref={ip1 => this.ip1 = ip1 } className="formInput" type="text"  id="name" name="Name" placeholder="Enter Your Name" required /><br />
+                                    <input ref={ip2 => this.ip2 = ip2 }  className="formInput"  type="email" id="email" name="email" placeholder="Enter Your Email" required/><br />
+                                    <textarea ref={ip3 => this.ip3 = ip3 }   className="formTextarea" name="message" id="message" rows="5" cols="50" placeholder="Enter Your Message" required>
                                     </textarea><br />
-                                    <button ref={isb => this.isb = isb } type="submit" name="submit">Submit</button>
+                                    <button ref={isb => this.isb = isb } type="submit" name="submit" >Submit</button>
                             </form>
                         </div>
                     </div>
