@@ -15,10 +15,10 @@ class App extends React.Component{
       <div className="App">
         <Header changeColor={this.changeColor}/>
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/projects" component={Projects}  />
-          <Route path="/skills" component={Skills} />
-          <Route path="/contact" component={Contact} />
+          <Route exact path="/portfolio/" component={Home} />
+          <Route path="/portfolio/projects" component={Projects}  />
+          <Route path="/portfolio/skills" component={Skills} />
+          <Route path="/portfolio/contact" component={Contact} />
         </Switch>
       </div>
     )
