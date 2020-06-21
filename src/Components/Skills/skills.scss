@@ -52,14 +52,14 @@
     .skills {
         height: 80vh;
         display: flex;
-
+        overflow-y: scroll;
         justify-content: center;
     
 
     .imgAlign{
-        height: 300px;
-        width: 350px;
-        margin: 20px 20px;
+        height: 200px;
+        width: 200px;
+        margin: 30px 20px;
     }
 }
 

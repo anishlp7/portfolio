@@ -52,7 +52,7 @@ class Contact extends React.Component{
 
             axios({
                 method:"POST",
-                url:"http://localhost:3001/api/form",
+                url:"https://radiant-scrubland-26021.herokuapp.com/api/form",
                 data: {
                     name,
                     email,

@@ -5,6 +5,7 @@
     grid-template-rows: 66vh;
     grid-template-columns: 50% 50%;
     color: white;
+    overflow: hidden;
     z-index: 12;
 
     .left{
@@ -90,6 +91,7 @@
 
    .col-12{
        width: 100%;
+       overflow: hidden;
    
 
    .cnctme{
@@ -117,10 +119,58 @@
 
 }
 
-@media (max-width: 550px) {
-    .contact{
-        
-    }
-  }
 }
+
+
+@media only screen and (max-width: 768px) and (min-width: 320px)  {
+    .contact {
+        overflow: scroll;
+        .col-6 {
+           display: flex;
+           flex-direction: column;
+           flex-wrap: wrap;
+        }
+
+        .formInput, .formTextarea{
+            width: 330px !important;
+        }
+   
+}
+
+}
+
+
+@media only screen and (max-width: 1024px) and (min-width: 768px)  {
+    .Project {
+        overflow: scroll;
+        display: flex;
+        justify-content: center;
+        height: 80vh;
+    
+
+    .imgAlign{
+        height: 277px;
+        width: 350px;
+    }
+}
+
+}
+
+
+
+@media only screen and (max-width: 1440px) and (min-width: 1024px)  {
+    .Project {
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+    
+
+    .imgAlign{
+        height: 300px;
+        width: 350px;
+    }
+}
+
+}
+
 

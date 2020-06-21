@@ -37,7 +37,7 @@ const Home = () => {
             <div className="home" >
             <div className="abt-me" ref={el => (abtme = el)}>
                 <p className="textAlign"><span className="headAlign">Hi, I'm Anish.</span><br />
-                A self-taught developer having 1.5+ years of non-organizational experience 
+                A self-taught developer having 1+ years of non-organizational experience 
                 and 4 months of organizational experience in software development and also having a Master's Degree in the
                  field of Computer Science & Engineering.
                 </p>

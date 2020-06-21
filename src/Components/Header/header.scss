@@ -1,12 +1,12 @@
 .Header {
-    height: 70px;
+    height: 10vh;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 25px;
     text-transform: uppercase;
     z-index: 12;
+    overflow: hidden;
   
     .left {
       position: relative;
@@ -54,4 +54,47 @@
     }
 
   }
+
+
+  @media only screen and (max-width: 768px) and (min-width: 320px)  {
+    .Header{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 8vh;
+
+      .left{
+        padding: 0;
+        height: 60%;
+        width: 90px;
+      }
+      .leftNav{
+        font-size: 10px;
+      }
+
+      .mainNav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+      .option{
+        font-size: 8px;
+        padding: 0 5px !important;
+      }
+
+      .resume{
+        font-size: 8px;
+        display: flex;
+        justify-content: center;
+        margin: 0 10px 0 0;
+        padding: 5px 10px;
+      }
+    }
+
+}
+
+
+
+
   

@@ -1,13 +1,16 @@
 .home {
-    display: grid;
-    grid-template-rows: 100vh;
-    grid-template-columns: 50% 50%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
     color: white;
+    height: 90vh;
     position: absolute;
     z-index: 12;
+    overflow: hidden;
 
     .abt-me{
         display: flex;
+        width: 44%;
         justify-content: center;
         align-items: center;
         margin: 0 0 0 100px;
@@ -28,7 +31,8 @@
 
     .img-me{
         display: flex;
-        justify-content: flex-start;
+        width: 50%;
+        justify-content: center;
         align-items: center;
         z-index: 12;
         
@@ -36,10 +40,144 @@
 
     .img1{
         background-size: cover;
-        height: 1000px;
+        height: 900px;
     }
+}
 
 
+@media only screen and (max-width: 768px) and (min-width: 320px)  {
+    .home {
+        display: flex;
+        height: 92vh;
+        width: 100vw;
+        flex-direction: column;
+        overflow: hidden;
+        
+        .abt-me{
+            width: 90%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 0 0 0 30px;
+            
+        }
 
+            .textAlign{
+                font-size: 20px;
+            }
+        
+            .headAlign{
+                font-size: 40px;
+            }
+            .img-me{
+                display: flex;
+                width: 97%;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+                z-index: 12;
+                overflow: scroll;
+                
+            }
+            .img1{
+                display: flex;
+                justify-content: center;;
+                height: 460px;
+                width: 300px;
+            }
+        
+}
 
 }
+
+@media only screen and (max-width: 1024px) and (min-width: 768px)  {
+    .home {
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        flex-direction: column;
+        
+        .abt-me{
+            width: 90%;
+            height: 40%;
+            display: flex;
+            justify-content: center;
+            margin: 0 0 0 30px;
+            
+        }
+
+            .textAlign{
+                text-align: center;
+                font-size: 30px;
+            }
+        
+            .headAlign{
+                font-size: 70px;
+            }
+            .img-me{
+                display: flex;
+                width: 97%;
+                height: 65%;
+                justify-content: center;
+                align-items: center;
+                z-index: 12;
+                overflow: scroll;
+                
+            }
+            .img1{
+                display: flex;
+                justify-content: center;;
+                height: 900px;
+                width: 600px;
+            }
+        
+}
+
+}
+
+
+
+@media only screen and (max-width: 1440px) and (min-width: 1024px)  {
+    .home {
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        flex-direction: column;
+        
+        .abt-me{
+            width: 90%;
+            height: 44%;
+            display: flex;
+            justify-content: center;
+            margin: 0 0 0 30px;
+            
+        }
+
+            .textAlign{
+                font-size: 30px;
+                text-align: center;
+            }
+        
+            .headAlign{
+                font-size: 70px;
+            }
+            .img-me{
+                display: flex;
+                width: 97%;
+                height: 100%;
+                justify-content: center;
+                align-items: center;
+                z-index: 12;
+                
+            }
+            .img1{
+                display: flex;
+                justify-content: center;;
+                height: 900px;
+                width: 600px;
+            }
+        
+}
+
+}
+
