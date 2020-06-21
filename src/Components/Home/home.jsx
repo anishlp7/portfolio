@@ -1,6 +1,7 @@
 import React from 'react';
 import anish from '../../assets/anish.webp';
-import { TimelineLite } from 'gsap'
+import { gsap, TimelineLite } from 'gsap'
+import { CSSPlugin } from 'gsap/all'
 
 import './home.scss'
 
@@ -22,6 +23,8 @@ class Home extends React.Component {
         this.tl
         .from(this.abtme, 0.5,{ x: -500,y:-150, autoAlpha: 0 })
         .from(this.imgme,0.5,{ y: 500, autoAlpha: 0 })
+
+        gsap.registerPlugin(CSSPlugin);
     }
 
 

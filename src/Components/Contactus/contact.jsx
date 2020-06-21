@@ -1,6 +1,7 @@
 import React from 'react';
 import {contactme, socialIcons } from './data';
 import { TimelineLite } from 'gsap';
+import {gsap, CSSPlugin} from 'gsap/all'
 import axios from 'axios';
 
 import './contact.scss';
@@ -39,6 +40,8 @@ class Contact extends React.Component{
             .staggerFrom(this.contactme, 0.5, { scale:-15, autoAlpha:0 }, 0.2)
             .from(this.cnctme,0.5, { scale: 50, autoAlpha:0},"contactme+=0.2")
             .staggerFrom(this.socialIcons, 0.5, { scale:15, autoAlpha:0 }, 0.1)
+
+            gsap.registerPlugin(CSSPlugin)
         }
 
         

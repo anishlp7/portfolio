@@ -1,6 +1,7 @@
 import React from 'react';
-import { TimelineLite } from 'gsap'
-
+import { gsap, TimelineLite } from 'gsap'
+import { CSSPlugin } from 'gsap/all'
+ 
 import {DataArray} from './data';
 import './skills.scss'
 
@@ -17,6 +18,7 @@ class Skills extends React.Component {
 
     componentDidMount(){
         this.tl.staggerFrom(this.cards, 0.5,{autoAlpha: 0, scale:-2 }, 0.3);
+        gsap.registerPlugin(CSSPlugin);
     }
 render(){
         return(

@@ -1,6 +1,7 @@
 import React from 'react';
 import { projects } from './data';
-import { TimelineLite } from 'gsap';
+import { gsap,TimelineLite } from 'gsap';
+import { CSSPlugin } from 'gsap/all'
 
 import './Projects.scss';
 
@@ -16,6 +17,8 @@ class Projects extends React.Component {
 
     componentDidMount(){
         this.tl.staggerFrom(this.projects, 0.5,{ scale:2, autoAlpha:0 }, 0.3);
+
+        gsap.registerPlugin(CSSPlugin)
     }
 
     render() {
