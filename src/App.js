@@ -13,12 +13,12 @@ class App extends React.Component{
 
     return(
       <div className="App">
-        <Header changeColor={this.changeColor}/>
+        <Header />
         <Switch>
-          <Route exact path="/portfolio/" component={Home} />
-          <Route path="/portfolio/projects" component={Projects}  />
-          <Route path="/portfolio/skills" component={Skills} />
-          <Route path="/portfolio/contact" component={Contact} />
+          <Route exact path="/" component={Home} />
+          <Route path="/projects" component={Projects}  />
+          <Route path="/skills" component={Skills} />
+          <Route path="/contact" component={Contact} />
         </Switch>
       </div>
     )
