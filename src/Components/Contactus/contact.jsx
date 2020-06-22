@@ -94,7 +94,7 @@ class Contact extends React.Component{
                                     <input ref={ip2 => this.ip2 = ip2 }  className="formInput"  type="email" id="email" name="email" placeholder="Enter Your Email" required/><br />
                                     <textarea ref={ip3 => this.ip3 = ip3 }   className="formTextarea" name="message" id="message" rows="5" cols="50" placeholder="Enter Your Message" required>
                                     </textarea><br />
-                                    <button ref={isb => this.isb = isb } type="submit" name="submit" >Submit</button>
+                                    <button ref={isb => this.isb = isb } type="submit" name="submit" >Send</button>
                             </form>
                         </div>
                     </div>

@@ -3,7 +3,7 @@ export const projects = [
         "id":1,
         "name":"Portfolio",
         "src":"portfolion.webp",
-        "href":"/"
+        "href":"https://anishlp7.github.io/portfolio/"
     },
     {
         "id":2,
