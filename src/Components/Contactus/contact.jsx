@@ -12,6 +12,13 @@ class Contact extends React.Component{
     constructor(props){
         super(props);
 
+        this.state = {
+            formSubmit:false,
+            sendBtn:true,
+            sendPostMessage:''
+
+        }
+
         this.handleSubmit = this.handleSubmit.bind(this);
         this.resetForm = this.resetForm.bind(this);
 
@@ -49,6 +56,7 @@ class Contact extends React.Component{
         handleSubmit(e) {
             e.preventDefault();
 
+            this.setState({sendBtn:false})
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
             const message = document.getElementById('message').value;
@@ -63,10 +71,9 @@ class Contact extends React.Component{
                 }
             }).then((response) => {
                 if(response.data.msg === 'success'){
-                    console.log("Message is sendt")
                     this.resetForm()
                 }else if(response.data.msg === 'fail'){
-                    alert("Message faled to sent.")
+                    this.setState({formSubmit:false, sendBtn:true, sendPostMessage:"Message Sent Failed.Please Try Again Later."})
                 }
             })
 
@@ -76,11 +83,12 @@ class Contact extends React.Component{
 
         resetForm(){
             document.getElementById('contact-form').reset();
-            alert("Message Was Sent SuccessFully")
+            this.setState({formSubmit:true, sendBtn:true,sendPostMessage:"Message Was Sent SuccessFully"})
             
         }
 
     render(){
+        const {formSubmit, sendBtn} = this.state;
             return (
                 <div className="contact">
                 <div className="col-6">
@@ -94,7 +102,25 @@ class Contact extends React.Component{
                                     <input ref={ip2 => this.ip2 = ip2 }  className="formInput"  type="email" id="email" name="email" placeholder="Enter Your Email" required/><br />
                                     <textarea ref={ip3 => this.ip3 = ip3 }   className="formTextarea" name="message" id="message" rows="5" cols="50" placeholder="Enter Your Message" required>
                                     </textarea><br />
-                                    <button ref={isb => this.isb = isb } type="submit" name="submit" >Send</button>
+
+                                    {
+                                        sendBtn ? 
+                                        <button ref={isb => this.isb = isb } type="submit" name="submit" >Send</button>
+                                        :
+                                        <div className="cntct-details" >
+                                           <img height="40px" src={require(`../../assets/spinner.gif`)}  alt="Loading..." />
+                                        </div>
+                                    }
+                                    
+
+                                    {formSubmit ? 
+                                        <div className="cntct-details">
+                                        <p style={{margin:"10px 0 0 0"}}>Message Was Sent SuccessFully</p>
+                                        </div>
+                                        :
+                                       null
+                                        
+                                    }
                             </form>
                         </div>
                     </div>

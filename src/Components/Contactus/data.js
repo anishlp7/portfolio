@@ -3,7 +3,7 @@ export const contactme = [
         "id":1,
         "name":"Whatsapp",
         "src":"whatsapp.svg",
-        "details":"+91 904357129"
+        "details":"+91 9043571929"
     },
     {
         "id":2,
