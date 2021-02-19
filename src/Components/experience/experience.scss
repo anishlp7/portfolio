@@ -1,0 +1,74 @@
+.experience{
+    z-index: 58;
+    .experience-box{
+        display: grid;
+        grid-template-columns: 30% 70%;
+        width: 99%;
+        z-index: 58;
+        border-radius: 10px;
+        margin: 20px 10px;
+        padding: 20px;
+        font-family: cursive;
+        background-color: transparent;
+        border: 2px solid white;
+        color: white;
+    }
+
+    .experience-left{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 58;
+        background: #1e2025;
+        padding: 20px;
+        border-radius: 10px;
+
+        .experience-company-pic{
+            height: 100px;
+        }
+    }
+
+
+
+    .experience-right{
+        z-index: 58;
+        padding: 0 20px;
+
+    }
+
+    .experience-description{
+        display: flex;
+    }
+
+    .experience-duration{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+@media only screen and (max-width: 768px) and (min-width: 320px)  {
+    .experience {
+        font-family: 'Times New Roman', Times, serif;
+        .experience-box {
+           display: flex;
+           flex-direction: column;
+           flex-wrap: wrap;
+        }
+
+        .experience-left{
+            .experience-company-pic{
+                height: 50px;
+            }
+        }
+
+        .experience-right{
+            margin: 10px 0 0 0;
+    
+        }
+
+        
+   
+}
+
+}

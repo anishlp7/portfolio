@@ -56,7 +56,7 @@ class Contact extends React.Component{
         handleSubmit(e) {
             e.preventDefault();
 
-            this.setState({sendBtn:false})
+            this.setState({sendBtn:false,formSubmit:true, sendPostMessage:"Please Wait...Since using heroku free version it usually takes some time.."})
             const name = document.getElementById('name').value;
             const email = document.getElementById('email').value;
             const message = document.getElementById('message').value;
@@ -73,7 +73,7 @@ class Contact extends React.Component{
                 if(response.data.msg === 'success'){
                     this.resetForm()
                 }else if(response.data.msg === 'fail'){
-                    this.setState({formSubmit:false, sendBtn:true, sendPostMessage:"Message Sent Failed.Please Try Again Later."})
+                    this.setState({formSubmit:true, sendBtn:true, sendPostMessage:"Message Sent Failed.Please Try Again Later."})
                 }
             })
 
@@ -88,7 +88,7 @@ class Contact extends React.Component{
         }
 
     render(){
-        const {formSubmit, sendBtn} = this.state;
+        const {formSubmit, sendBtn,sendPostMessage} = this.state;
             return (
                 <div className="contact">
                 <div className="col-6">
@@ -115,7 +115,7 @@ class Contact extends React.Component{
 
                                     {formSubmit ? 
                                         <div className="cntct-details">
-                                        <p style={{margin:"10px 0 0 0"}}>Message Was Sent SuccessFully</p>
+                                        <p style={{margin:"10px 0 0 0"}}>{sendPostMessage}</p>
                                         </div>
                                         :
                                        null

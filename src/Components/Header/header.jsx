@@ -15,6 +15,7 @@ class Header extends React.Component {
             </div>
             <div className="mainNav">
                 <NavLink exact to="/" className="option" activeStyle={{fontWeight:"bold", color:"yellow"}}>Home</NavLink>
+                <NavLink to="/experience" className="option" activeStyle={{fontWeight:"bold", color:"yellow"}}>Work Experience</NavLink>
                 <NavLink to="/skills" className="option" activeStyle={{fontWeight:"bold", color:"yellow"}}>Skills</NavLink>
                 <NavLink to="/projects" className="option"  activeStyle={{fontWeight:"bold", color:"yellow"}}>Projects</NavLink>
                 <NavLink to="/contact" className="option"  activeStyle={{fontWeight:"bold", color:"yellow"}}>Contact Me</NavLink>

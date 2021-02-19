@@ -6,6 +6,7 @@ import Home from './Components/Home/home';
 import Skills from './Components/Skills/skills';
 import Contact from './Components/Contactus/contact';
 import Projects from './Components/Projects/Projects.jsx';
+import Experience from "./Components/experience/experience";
 
 class App extends React.Component{
 
@@ -19,6 +20,7 @@ class App extends React.Component{
           <Route path="/projects" component={Projects}  />
           <Route path="/skills" component={Skills} />
           <Route path="/contact" component={Contact} />
+          <Route path="/experience" component={Experience} />
         </Switch>
       </div>
     )
