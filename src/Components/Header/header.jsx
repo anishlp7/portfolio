@@ -4,9 +4,6 @@ import resume from '../../assets/resume.pdf';
 import './header.scss';
 
 class Header extends React.Component {
-
-   
-
     render(){
         return (
         <div className="Header"  >
