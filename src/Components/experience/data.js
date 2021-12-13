@@ -4,7 +4,7 @@ export const experience= [
         "companyName":"Troniqs Rationale Technologies and Services pvt Ltd.",
         "companyLogo":"trq.png",
         "jobTitle":"Senior Full Stack Engineer",
-        "from":"01/07/2021",
+        "from":"07/2021",
         "to":"Present",
         "description":[
             {
@@ -27,8 +27,8 @@ export const experience= [
         "companyName":"GoldFinch",
         "companyLogo":"goldfinch.png",
         "jobTitle":"Front-End Developer",
-        "from":"01/07/2020",
-        "to":"30/06/2021",
+        "from":"07/2020",
+        "to":"06/2021",
         "description":[
             {
             "id":1,
@@ -51,11 +51,34 @@ export const experience= [
     },
     {
         "id":2,
+        "companyName":"Freelancer",
+        "companyLogo":"freelancer.png",
+        "jobTitle":"Full Stack Developer",
+        "from":"10/2019",
+        "to":"06/2020",
+        "description":[
+            {
+            "id":1,
+            "desc":"Hands-on experience using HTML, Javascript and Git. "
+        },
+
+        {
+            "id":2,
+            "desc":"Convert the UI/UX Design(Adobe XD, Figma) into a Responsive Web Application Using HTML, CSS, Bootstrap,React.js."
+        },
+        {
+            "id":3,
+            "desc":"Designing and implementing APIs using Node.js."
+        }
+    ]
+    },
+    {
+        "id":3,
         "companyName":"Troniqs Rationale Technologies and Services pvt Ltd.",
         "companyLogo":"trq.png",
         "jobTitle":"Front-End Developer",
-        "from":"15/05/2019",
-        "to":"10/09/2019",
+        "from":"05/2019",
+        "to":"09/2019",
         "description":[
             {
             "id":1,
@@ -65,6 +88,29 @@ export const experience= [
         {
             "id":2,
             "desc":"Convert UI/UX Design(Figma) into HTML, JavaScript, AJAX and JSON. "
+        },
+        {
+            "id":3,
+            "desc":"Use markup languages like HTML to create user-friendly web pages."
+        }
+    ]
+    },
+    {
+        "id":4,
+        "companyName":"Freelancer",
+        "companyLogo":"freelancer.png",
+        "jobTitle":"Front-End Developer",
+        "from":"05/2018",
+        "to":"04/2019",
+        "description":[
+            {
+            "id":1,
+            "desc":"Convert the UI/UX Design(Figma) into a Responsive Web Application using HTML, CSS, Bootstrap."
+        },
+
+        {
+            "id":2,
+            "desc":"Creating websites on WordPress using elementor plugin."
         },
         {
             "id":3,
