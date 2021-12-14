@@ -6,18 +6,9 @@ import Particles from "react-tsparticles";
 import './index.css';
 import App from './App';
 
-const particlesInit = (main) => {
-  console.log(main);
-};
-
-const particlesLoaded = (container) => {
-  console.log(container);
-}
-
 ReactDOM.render(
   <React.StrictMode>
-  <Particles className="particles" init={particlesInit}
-  loaded={particlesLoaded} options={ParticlesOpt} />
+  <Particles className="particles" options={ParticlesOpt} />
     <BrowserRouter>
       <App />
     </BrowserRouter>
