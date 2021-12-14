@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Header from './Components/Header/header';
-import { Switch, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Home from './Components/Home/home';
 import Skills from './Components/Skills/skills';
 import Contact from './Components/Contactus/contact';
@@ -15,13 +15,13 @@ class App extends React.Component{
     return(
       <div className="App">
         <Header />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/projects" component={Projects}  />
-          <Route path="/skills" component={Skills} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/experience" component={Experience} />
-        </Switch>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />}  />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/experience" element={<Experience />} />
+        </Routes>
       </div>
     )
   }

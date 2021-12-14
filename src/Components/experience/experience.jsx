@@ -28,7 +28,7 @@ class Experience extends React.Component{
                 return(
                     <div className="experience-box"  ref= { el => this.experience[index] = el }>
                     <div className="experience-left">
-                        <img className="experience-company-pic" src={require(`../../assets/experience/${data.companyLogo}`)} alt="Name of the company" />
+                        <img className="experience-company-pic" src={require(`../../assets/experience/${data.companyLogo}`).default} alt="Name of the company" />
                     </div>
                     <div className="experience-right">
                         <h2 style={{margin:"0"}}>{data.companyName}</h2>
@@ -38,7 +38,7 @@ class Experience extends React.Component{
                             data.description.map((des) => {
                                 return(
                                     <div className="experience-description">
-                                    <img height="20px" src={require(`../../assets/experience/right-arrow.svg`)}  alt="Loading..." />
+                                    <img height="20px" src={require(`../../assets/experience/right-arrow.svg`).default}  alt="Loading..." />
                                     <p style={{margin:"0 0 0 10px"}}>{des.desc}</p>
                                     </div>
                                 )
