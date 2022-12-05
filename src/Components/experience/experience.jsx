@@ -2,8 +2,6 @@ import React from "react";
 import { TimelineLite } from 'gsap';
 import {gsap, CSSPlugin} from 'gsap/all';
 import {experience} from "./data"
-
-
 import "./experience.scss";
 
 class Experience extends React.Component{
@@ -27,12 +25,13 @@ class Experience extends React.Component{
                experience.map((data, index) => {
                 return(
                     <div className="experience-box"  ref= { el => this.experience[index] = el }>
-                    <div className="experience-left">
+                    <div className="experience-main">
+                    <div className="experience-logo">
                         <img className="experience-company-pic" src={require(`../../assets/experience/${data.companyLogo}`).default} alt="Name of the company" />
                     </div>
-                    <div className="experience-right">
-                        <h2 style={{margin:"0"}}>{data.companyName}</h2>
-                        <h4 style={{margin:"0"}}>{data.jobTitle}</h4>
+                    <div className="experience-content">
+                        <h2>{data.jobTitle}</h2>
+                        <h4 style={{margin:"0"}}>{data.companyName}</h4>
                         <h4 style={{margin:"10px 0"}}>Description</h4>
                         {
                             data.description.map((des) => {
@@ -44,12 +43,11 @@ class Experience extends React.Component{
                                 )
                             })
                         }
-                        
-                        
-                        <div className="experience-duration">
+                        </div>
+                    </div>
+                    <div className="experience-duration">
                             <p>From: {data.from}</p>
                             <p>To: {data.to}</p>
-                        </div>
                     </div>
                 </div>
                 )

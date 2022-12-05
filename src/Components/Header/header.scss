@@ -1,101 +1,142 @@
+
 .Header {
-    height: 10vh;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-transform: uppercase;
+  min-height: 10vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  z-index: 12;
+  overflow: hidden;
+
+  .left {
+    position: relative;
+    height: 100%;
+    width: 200px;
+    padding: 25px;
+    letter-spacing: 3px;
     z-index: 12;
-    overflow: hidden;
-  
-    .left {
-      position: relative;
-      height: 100%;
-      width: 150px;
-      padding: 25px;
-      letter-spacing: 3px;
-      z-index: 12;
-    }
+  }
 
-    .mainNav {
-      width: 50%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 12;
-  
-      .option {
-        padding: 10px 15px;
-        cursor: pointer;
-        color: white;
-        transition: color 2s;
-        transition-duration: 1s;
+  .mainNav {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 12;
 
-        &:hover{
-          transform: rotate(10deg) scale(1) skew(15deg);
-          color:yellow;
-        }
+    .option {
+      padding: 10px 15px;
+      cursor: pointer;
+      color: white;
+      transition: color 2s;
+      transition-duration: 1s;
+
+      &:hover{
+        transform: rotate(10deg) scale(1) skew(15deg);
+        color:yellow;
       }
     }
-    .resume{
-      margin: 0 10px 0 0;
-      padding: 8px 30px;
-      border: 3px solid white;
-      border-radius: 10px;
-      z-index: 20;
-      transition: color 2s;
-        transition-duration: 1s;
+  }
+  .resume{
+    margin: 0 10px 0 0;
+    padding: 8px 30px;
+    border: 3px solid white;
+    border-radius: 10px;
+    z-index: 20;
+    transition: color 2s;
+      transition-duration: 1s;
 
-        &:hover{
-          transform: rotate(10deg) scale(1) skew(15deg);
-          color:yellow;
-        }
-    }
-
+      &:hover{
+        transform: rotate(10deg) scale(1) skew(15deg);
+        color:yellow;
+      }
+  }
+}
+  .header-mobile{
+    display: none;
+  }
+  .hamburger-mobile{
+      display: none;
   }
 
 
-  @media only screen and (max-width: 768px) and (min-width: 320px)  {
-    .Header{
+@media only screen and (max-width: 768px) {
+  .Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 8vh;
+
+    .left{
+      padding: 0;
+      padding-left: 10px;
+      height: 35%;
+      width: 150px;
+    }
+    .leftNav{
+      font-size: 10px;
+    }
+  
+    .resume{
+      display: none !important;
+      font-size: 8px;
       display: flex;
       justify-content: center;
-      align-items: center;
-      height: 8vh;
-      font-family: 'Times New Roman', Times, serif;
+      margin: 0 10px 0 0;
+      padding: 5px 10px;
+    }
+  }
+  .mainNav{
+    display: none !important;
+  }
 
-      .left{
-        padding: 0;
-        height: 60%;
-        width: 90px;
-      }
-      .leftNav{
-        font-size: 10px;
-      }
+  .hamburger-mobile{
+    display: block;
+    background: transparent;
+    border: none;
+    z-index: 1;
+    padding-right: 10px
+  }
 
-      .mainNav{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-      }
+  .close-mobile{
+    background: transparent;
+    border: none;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: end;
+  }
+
+  .header-mobile{
+    display: block !important;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: #fff;
+    z-index: 9999;
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      padding: 0;
+      margin: 20px 0;
+      text-align: center;
       .option{
-        font-size: 8px;
-        padding: 0 5px !important;
-      }
-
-      .resume{
-        font-size: 8px;
-        display: flex;
-        justify-content: center;
-        margin: 0 10px 0 0;
-        padding: 5px 10px;
+        color: #000;
       }
     }
-
+  }
+  .mbl-resume{
+    display: flex;
+    justify-content: center;
+    color: #000;
+  }
+  
+  }
 }
 
 
 
 
-  

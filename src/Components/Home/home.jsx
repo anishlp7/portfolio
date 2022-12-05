@@ -33,8 +33,7 @@ class Home extends React.Component {
             <div className="home" >
             <div className="abt-me" ref={el => this.abtme = el}>
                 <p className="textAlign"><span className="headAlign">Hi, I'm Anish.</span><br />
-                A self-taught developer with 2+ years of organizational experience 
-                and 1.5+ of freelancing experience in software development.I've also acquired a Master's Degree in the
+                A self-taught developer with 4+ years of organizational and non-experience in software development.I've also acquired a Master's Degree in the
                  field of Computer Science & Engineering.
                 </p>
             </div>

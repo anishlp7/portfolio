@@ -1,12 +1,24 @@
 .skills {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
+    overflow: hidden;
+
+    .skills-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            color: #fff;
+            font-size: 18px;
+        }
+    }
 
     .imgAlign{
-    
         height: 150px;
-        width: 150px;
-        margin: 66px 30px;
+        width: 160px;
+        margin: 66px 45px 0 45px;
         background-size: cover;
         z-index: 15;
     }
@@ -15,15 +27,15 @@
 @media only screen and (max-width: 1024px) and (min-width: 768px)  {
     .skills {
         overflow: scroll;
+        overflow-x: hidden;
         display: flex;
         justify-content: center;
-        height: 80vh;
     
 
     .imgAlign{
         margin: 25px 20px;
-        height: 277px;
-        width: 350px;
+        height: 180px;
+        width: 180px;
     }
 }
 
@@ -33,9 +45,9 @@
     .skills {
         display: flex;
         justify-content: center;
-        height: 80vh;
         margin: 20px 20px;
         overflow: scroll;
+        overflow-x: hidden;
     
 
     .imgAlign{

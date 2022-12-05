@@ -1,11 +1,34 @@
 export const experience= [
     {
         "id":0,
+        "companyName":"DeepConverse Inc.",
+        "companyLogo":"dc.png",
+        "jobTitle":"Software Developer",
+        "from":"01/2022",
+        "to":"Present",
+        "description":[
+            {
+            "id":1,
+            "desc":"Convert the UI/UX Design(Figma) into a Responsive Web Application using React.js"
+        },
+
+        {
+            "id":2,
+            "desc":"Collaborate with back-end developers and web designers to improve usability. Designing and implementing scalable web services, applications, and APIs."
+        },
+        {
+            "id":3,
+            "desc":"Build reusable code and libraries for future use."
+        }
+    ]
+    },
+    {
+        "id":0,
         "companyName":"Troniqs Rationale Technologies and Services pvt Ltd.",
         "companyLogo":"trq.png",
         "jobTitle":"Senior Full Stack Engineer",
         "from":"07/2021",
-        "to":"Present",
+        "to":"12/2021",
         "description":[
             {
             "id":1,
