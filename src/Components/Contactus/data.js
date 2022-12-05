@@ -49,5 +49,11 @@ export const socialIcons = [
         "name":"Github",
         "src":"github.svg",
         "href":"https://github.com/anishlp7"
-    }
+    },
+     {
+        "id":5,
+        "name":"Whatsapp",
+        "src":"whatsapp.svg",
+        "href":`https://wa.me/919043571929?text=Hi,%20Your%20portfolio%20design%20was%20`
+    },
 ];
