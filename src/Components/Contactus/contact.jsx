@@ -108,7 +108,7 @@ class Contact extends React.Component{
                                         <button ref={isb => this.isb = isb } type="submit" name="submit" >Send</button>
                                         :
                                         <div className="cntct-details" >
-                                           <img height="40px" src={require(`../../assets/spinner.gif`).default}  alt="Loading..." />
+                                           <img height="40px" src={require(`../../assets/spinner.gif`)}  alt="Loading..." />
                                         </div>
                                     }
                                     
@@ -135,7 +135,7 @@ class Contact extends React.Component{
                                             return (
                                             <tbody  key={element.id} ref={contact => this.contactme[index] = contact}>
                                             <tr>
-                                                <td><img className="imgAlign" src={require(`../../assets/contact/${element.src}`).default} alt={element.name} /></td>
+                                                <td><img className="imgAlign" src={require(`../../assets/contact/${element.src}`)} alt={element.name} /></td>
                                                 <td><p>{element.details}</p></td>
                                             </tr>
                                             </tbody>
@@ -156,7 +156,7 @@ class Contact extends React.Component{
                                         socialIcons.map((element, index) => {
                                             return (
                                             <a ref={scimg => this.socialIcons[index] = scimg} key={element.id} href={element.href} target="_blank" rel="noopener noreferrer">
-                                                <img className="imgAlign1" src={require(`../../assets/contact/${element.src}`).default} alt={element.name} />
+                                                <img className="imgAlign1" src={require(`../../assets/contact/${element.src}`)} alt={element.name} />
                                             </a>
                                             )
                                         })

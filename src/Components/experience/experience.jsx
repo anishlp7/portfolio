@@ -37,7 +37,7 @@ class Experience extends React.Component{
                             data.description.map((des) => {
                                 return(
                                     <div className="experience-description">
-                                    <img height="20px" src={require(`../../assets/experience/right-arrow.svg`).default}  alt="Loading..." />
+                                    <img height="20px" src={require(`../../assets/experience/right-arrow.svg`)}  alt="Loading..." />
                                     <p style={{margin:"0 0 0 10px"}}>{des.desc}</p>
                                     </div>
                                 )

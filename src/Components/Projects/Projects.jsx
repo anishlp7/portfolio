@@ -29,7 +29,7 @@ class Projects extends React.Component {
             projects.map((element, index) => (
                 <div className="mapAlign" key={element.id}>
                 <a href={element.href} target="_blank" rel="noopener noreferrer">
-                        <img className="imgAlign" src={require(`../../assets/projects/${element.src}`).default} 
+                        <img className="imgAlign" src={require(`../../assets/projects/${element.src}`)} 
                         alt={element.name}
                         ref= { el => this.projects[index] = el }
                         />

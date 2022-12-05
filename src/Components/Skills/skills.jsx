@@ -26,7 +26,7 @@ render(){
                 {
                 DataArray.map((element, index) => (
                     <div className='skills-container'  ref= { el => this.cards[index] = el }>
-                    <img className="imgAlign" key={element.id} src={require(`../../assets/skills/${element.src}`).default} 
+                    <img className="imgAlign" key={element.id} src={require(`../../assets/skills/${element.src}`)} 
                     alt={element.name}
                   
                     />
