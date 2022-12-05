@@ -63,7 +63,7 @@ class Contact extends React.Component{
 
             axios({
                 method:"POST",
-                url:"https://radiant-scrubland-26021.herokuapp.com/api/form",
+                url:"https://nodemailer-woad.vercel.app/",
                 data: {
                     name,
                     email,
