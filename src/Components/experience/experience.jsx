@@ -1,7 +1,8 @@
 import React from "react";
 import { TimelineLite } from 'gsap';
 import {gsap, CSSPlugin} from 'gsap/all';
-import {experience} from "./data"
+import {experience} from "./data";
+import arrow from "../../assets/experience/right-arrow.svg"
 import "./experience.scss";
 
 class Experience extends React.Component{
@@ -27,7 +28,7 @@ class Experience extends React.Component{
                     <div className="experience-box"  ref= { el => this.experience[index] = el }>
                     <div className="experience-main">
                     <div className="experience-logo">
-                        <img className="experience-company-pic" src={require(`../../assets/experience/${data.companyLogo}`).default} alt="Name of the company" />
+                        <img className="experience-company-pic" src={require(`../../assets/experience/${data.companyLogo}`)} alt="Name of the company" />
                     </div>
                     <div className="experience-content">
                         <h2>{data.jobTitle}</h2>
@@ -37,7 +38,7 @@ class Experience extends React.Component{
                             data.description.map((des) => {
                                 return(
                                     <div className="experience-description">
-                                    <img height="20px" src={require(`../../assets/experience/right-arrow.svg`)}  alt="Loading..." />
+                                    <img height="20px" src={arrow}  alt="Arrow" />
                                     <p style={{margin:"0 0 0 10px"}}>{des.desc}</p>
                                     </div>
                                 )
