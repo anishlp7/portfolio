@@ -1,15 +1,15 @@
 export const experience= [
     {
         "id":0,
-        "companyName":"DeepConverse Inc.",
+        "companyName":"Flying Colour Business Setup Services.",
         "companyLogo":"dc.png",
-        "jobTitle":"Software Developer",
+        "jobTitle":"Senior Software Developer - Front End",
         "from":"01/2022",
         "to":"Present",
         "description":[
             {
             "id":1,
-            "desc":"Convert the UI/UX Design(Figma) into a Responsive Web Application using React.js"
+            "desc":"Designed the existing product from scratch in React.js, Context API, SASS"
         },
 
         {
